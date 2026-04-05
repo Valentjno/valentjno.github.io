@@ -22,10 +22,9 @@ This site should remain lightweight and easy to host as plain static files.
 # Project Structure
 
 ## File Architecture
-- `index.html` — Landing page (hero + concise intro + expertise areas)
-- `about.html` — Responsible AI focus, background, approach
-- `work.html` — Red-teaming methodologies, ISO 42001 governance, projects
-- `research.html` — Academic research, OWASP AI Exchange contribution, focus areas
+- `index.html` — Landing page (hero + intro + navigation cards)
+- `about.html` — Personal background and approach (no repetition from work.html)
+- `work.html` — Combined research & work: publication, projects, community contributions
 - `contact.html` — Contact form (Formspree) + email/LinkedIn links
 
 ## Technical Structure
@@ -50,6 +49,12 @@ This site should remain lightweight and easy to host as plain static files.
 - Keep layouts clean and uncluttered
 - Design mobile-first, then improve for larger screens
 - Make sure the site feels personal, confident, and intentional
+
+# Content Philosophy
+- **Less is better**: Minimal, direct, no filler — every word purposeful
+- **No repetition**: Each page has distinct focus; avoid duplicating content across pages
+- **IoT-first messaging**: Lead with IoT security as primary research area
+- **Specificity**: Use real credentials (University of Catania, energy-based detection) not generic descriptions
 
 # Content Rules
 - **Concise first:** Short sentences, bullet points, no filler
@@ -117,10 +122,10 @@ Common sections to consider:
 # Personal Branding
 This is the personal website of Valentino Merlino.
 The site should position him as:
-- **ISO 42001 Implementer** — AI governance and risk management frameworks (primary)
-- **Responsible AI Practitioner** — Security-first approach to AI development
-- **Red Team Specialist** — Adversarial testing and vulnerability assessment
-- **Security Researcher** — PhD candidate at University of Catania, OWASP AI Exchange contributor
+- **IoT Security Researcher** — Energy-based attack detection in resource-constrained devices (primary)
+- **Red Team Specialist** — Adversarial testing and vulnerability assessment (supporting)
+- **PhD Candidate** — University of Catania, focused on edge system security
+- **Community Contributor** — OWASP AI Exchange, CEN-CENELEC JTC 21
 
 When writing copy:
 - Keep tone professional, precise, and technical but accessible
@@ -129,10 +134,18 @@ When writing copy:
 - Avoid startup jargon; use concrete examples and credentials
 - Concise and scannable (not verbose)
 
-# Fonts
-Use Inter via Google Fonts CDN unless explicitly changed.
+# Typography System
+**Fonts:** Playfair Display (headings, serif) + Crimson Text (body, serif) via Google Fonts CDN
+**Aesthetic:** Editorial/scholarly serif system — distinctive, refined, memorable
+**Why:** Avoids generic sans-serif defaults (Inter, Space Mono); creates professional character befitting a researcher
 
 # Design System
+
+## Typography
+- **Headings**: Playfair Display (serif, 600–800 weight)
+- **Body**: Crimson Text (serif, regular + italic)
+- **Line-height**: 1.8 for refined readability
+- **Effect**: Editorial/minimalist aesthetic — scholarly, professional, memorable
 
 ## CSS Variables
 All colors and common values are defined in `:root` CSS variables (no hardcoded colors):
