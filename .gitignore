@@ -9,6 +9,13 @@
 *.sublime-project
 *.sublime-workspace
 
+# Claude-specific files
+.claude/
+docs/superpowers/
+
+# Test files
+test_*.html
+
 # Dependencies
 node_modules/
 
@@ -26,13 +33,13 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 
-# Build (if ever needed)
+# Build artifacts (if ever needed)
 dist/
 build/
 .next/
 
-# Note: Images ARE tracked (remove from this file if needed)
-# *.png
-# *.jpg
-# *.jpeg
-# *.gif
+# Large files
+*.png
+*.jpg
+*.jpeg
+*.gif

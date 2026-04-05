@@ -12,13 +12,12 @@ A minimal, fast-loading static website built with semantic HTML, embedded CSS, a
 
 ```
 .
-├── index.html           Landing page
-├── about.html           Background and approach
-├── work.html            Red-teaming and security work
-├── research.html        IoT security research and publications
-├── contact.html         Contact form and reach out options
-├── README.md            This file
-└── CLAUDE.md            Development guidelines for Claude Code
+├── index.html           Landing page (hero, intro, navigation)
+├── about.html           Background, approach, and experience
+├── work.html            Research, publications, projects, community
+├── contact.html         Contact form and contact options
+├── CLAUDE.md            Development guidelines
+└── README.md            This file
 ```
 
 ## Local Development
@@ -55,9 +54,9 @@ git push origin main
 
 - **HTML:** Semantic markup, no frameworks
 - **CSS:** Embedded in `<style>` tags, organized by component
-- **JavaScript:** Vanilla JS for animations and interactions
-- **Fonts:** Inter (body) and Space Mono (headings) via Google Fonts CDN
-- **Hosting:** GitHub Pages (static)
+- **JavaScript:** Vanilla JS for animations and scroll effects
+- **Fonts:** Playfair Display (headings) and Crimson Text (body) via Google Fonts CDN
+- **Hosting:** GitHub Pages (static, no build step)
 
 ## Design System
 
@@ -73,9 +72,10 @@ git push origin main
 ```
 
 ### Typography
-- **Headings:** Space Mono (monospace, 700 weight)
-- **Body:** Inter (sans-serif, 400–700 weight)
-- **Line height:** 1.6–1.8 for legibility
+- **Headings (h1–h3):** Playfair Display (serif, 700 weight) — editorial, refined aesthetic
+- **Body:** Crimson Text (serif, 400–700 weight) — readable, professional
+- **Line height:** 1.8 for refined readability
+- **Aesthetic:** Editorial/scholarly serif system, distinctive and memorable
 
 ### Spacing
 - Desktop: 40px padding/margin
