@@ -115,11 +115,6 @@
             display: inline-block;
             color: var(--color-black);
             text-decoration: none;
-            transition: opacity 0.2s ease;
-        }
-
-        .nav-header-logo a:hover {
-            opacity: 0.7;
         }
 
         .nav-header-nav {
@@ -316,12 +311,12 @@
         }
         
         .hide-mobile {
-            display: none;
+            display: block;
         }
-        
-        @media (min-width: 768px) {
+
+        @media (max-width: 768px) {
             .hide-mobile {
-                display: block;
+                display: none;
             }
         }
         
@@ -456,37 +451,24 @@
         
         /* Footer */
         footer {
-            background-color: var(--bg-dark);
+            background-color: #1a1a1a;
             color: var(--color-white);
             padding: 60px 40px;
             margin-top: 100px;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-        }
-        
-        .footer-profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-        
-        .footer-profile img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        
-        .footer-text {
             text-align: center;
+        }
+
+        .footer-text {
             font-size: 16px;
             margin-bottom: 30px;
+            line-height: 1.6;
         }
-        
+
         .footer-links {
             display: flex;
             justify-content: center;
@@ -494,14 +476,40 @@
             flex-wrap: wrap;
             font-size: 12px;
         }
-        
+
         .footer-links a {
             color: var(--color-white);
-            transition: all 0.3s ease;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
         }
-        
+
         .footer-links a:hover {
             opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 40px 24px;
+            }
+
+            .footer-links {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                padding: 30px 16px;
+            }
+
+            .footer-text {
+                font-size: 14px;
+            }
+
+            .footer-links {
+                gap: 12px;
+                font-size: 11px;
+            }
         }
         
         /* Responsive Design */
@@ -737,14 +745,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-profile">
-                <p class="footer-text">Thanks for stopping by.</p>
-                <div class="footer-links">
-                    <a href="mailto:valentino@example.com">email</a>
-                    <a href="https://twitter.com" target="_blank">twitter</a>
-                    <a href="https://github.com" target="_blank">github</a>
-                    <a href="https://linkedin.com" target="_blank">linkedin</a>
-                </div>
+            <p class="footer-text">Let's talk about AI security.</p>
+            <div class="footer-links">
+                <a href="mailto:valentino@example.com">email</a>
+                <a href="https://www.linkedin.com/in/valentinomerlino" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank">twitter</a>
+                <a href="https://github.com" target="_blank">github</a>
             </div>
         </div>
     </footer>
