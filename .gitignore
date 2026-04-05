@@ -9,9 +9,6 @@
 *.sublime-project
 *.sublime-workspace
 
-# Claude
-.claude/
-
 # Dependencies
 node_modules/
 
