@@ -684,10 +684,6 @@
         const navTabs = document.querySelectorAll('.nav-tab');
         navTabs.forEach((tab, index) => {
             tab.style.animationDelay = `${index * 0.15}s`;
-            tab.addEventListener('mouseenter', function() {
-                this.style.animation = 'none';
-                this.style.animation = 'pulse 0.6s ease-in-out';
-            });
         });
     </script>
 </body>
