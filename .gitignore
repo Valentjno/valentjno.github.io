@@ -1,0 +1,9 @@
+.env
+.vscode/
+.claude/
+node_modules/
+*.png
+*.jpg
+*.jpeg
+*.gif
+.DS_Store
